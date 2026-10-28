@@ -1,0 +1,128 @@
+:root {
+    --azul: #2563a7;
+    --oscuro: #173b65;
+    --claro: #eaf1f9;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; font: 16px/1.6 Arial, sans-serif; color: #27384d; background: #f6f9fd; }
+.contenedor { width: 90%; max-width: 950px; margin: auto; }
+
+/* TÍTULO*/
+.titulo-sitio { text-align: center; padding: 24px 12px 8px; background: white; }
+.titulo-sitio h1 { margin: 0; color: var(--oscuro); font-size: 30px; }
+
+/* INICIO */
+.presentacion { text-align: center; background: var(--claro); padding: 52px 15px; }
+.etiqueta { color: var(--azul); font-weight: bold; font-size: 12px; letter-spacing: 1px; }
+h2 { color: var(--oscuro); font-size: 25px; }
+.presentacion h2 { font-size: 32px; margin: 12px 0; }
+.texto-presentacion { max-width: 650px; margin: 14px auto 24px; }
+.boton { display: inline-block; padding: 12px 22px; background: var(--azul); color: white; border: 0; border-radius: 7px; text-decoration: none; font: bold 15px Arial, sans-serif; cursor: pointer; }
+.boton:hover { background: #174c85; }
+.seccion { padding: 20px 0; }
+.tarjeta { background: white; border: 1px solid #dce5ef; border-radius: 10px; padding: 22px; }
+.tarjeta p { margin: 0 0 10px; }
+.tarjeta p:last-child { margin-bottom: 0; }
+.tres-columnas { display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; }
+.tarjeta-tecnologia { text-align: center; }
+.icono-tecnologia { color: var(--azul); background: var(--claro); padding: 12px; border-radius: 8px; font-weight: bold; }
+.tarjeta-tecnologia h3 { color: var(--oscuro); margin: 18px 0 8px; }
+.tarjeta-tecnologia p { color: #65758b; font-size: 14px; }
+
+/* CALCULADORA*/
+.pagina-calculadora { 
+    background: var(--claro); 
+    min-height: 75vh; padding: 35px 15px 55px;
+ }
+ 
+.introduccion-calculadora { text-align: center;
+     margin-bottom: 25px;
+     }
+
+.introduccion-calculadora h2 { 
+    margin: 10px 0; 
+}
+
+.calculadora { 
+    max-width: 440px; margin: auto; 
+}
+
+.campo { 
+    margin-bottom: 16px; 
+}
+
+.campo label { 
+    display: block; font-weight: bold; 
+    margin-bottom: 6px; 
+}
+
+.campo input, .campo select { 
+    width: 100%; padding: 11px; 
+    border: 1px solid #bdcad9; 
+    border-radius: 6px; 
+    font: inherit; 
+    background: white; 
+}
+
+.boton-completo { 
+    width: 100%; 
+}
+
+.mensaje { 
+    margin-top: 18px; 
+    padding: 13px; border-radius: 7px; 
+    text-align: center; 
+}
+
+.mensaje-resultado {
+    background: transparent;
+    color: black;
+}
+
+.mensaje-resultado span,
+.mensaje-resultado strong {
+    display: block;
+}
+
+.mensaje-resultado strong {
+    font-size: 30px;
+}
+
+.mensaje-error { 
+    background: #fff0ed; 
+    color: #a33422; 
+}
+
+.volver { 
+    display: block; 
+    margin-top: 20px; 
+    text-align: center; 
+    color: var(--azul); 
+    text-decoration: none; 
+}
+
+.nota { 
+    text-align: center; 
+    color: #65758b; 
+    font-size: 13px; 
+}
+
+.pie-pagina { 
+    text-align: center;
+     background: #173b65;
+      color: white;
+       padding: 15px;
+        font-size: 13px; 
+    }
+
+.pie-pagina p { 
+    margin: 0; 
+}
+
+/* CELULARES*/
+@media (max-width: 650px) {
+    .titulo-sitio h1 { font-size: 24px; }
+    .presentacion h2 { font-size: 26px; }
+    .tres-columnas { grid-template-columns: 1fr; }
+}
